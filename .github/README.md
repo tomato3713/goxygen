@@ -1,32 +1,33 @@
-<h1 align="center">
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README.md">
-        <img height="25px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/gb.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_zh.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/cn.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_ua.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/ua.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_ru.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/ru.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_ko.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/kr.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_pt-br.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/br.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_by.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/by.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_fr.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/fr.svg">
-    </a>
-    <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_es.md">
-        <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/es.svg">
-    </a>
-    <br>
+<h1>
+    <div align="center">
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README.md">
+            <img height="25px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/gb.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_zh.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/cn.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_ua.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/ua.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_ru.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/ru.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_ko.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/kr.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_pt-br.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/br.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_by.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/by.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_fr.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/fr.svg">
+        </a>
+        <a href="https://github.com/Shpota/goxygen/tree/master/.github/README_es.md">
+            <img height="20px" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/es.svg">
+        </a>
+    </div>
     Goxygen
     <a href="https://github.com/Shpota/goxygen/actions?query=workflow%3Abuild">
         <img src="https://github.com/Shpota/goxygen/workflows/build/badge.svg">
@@ -44,7 +45,8 @@
 
 <img src="../templates/react.webapp/src/logo.svg" align="right" width="230px" alt="goxygen logo">
 
-**Generate a Web project with Go, Angular/React/Vue, and MongoDB in seconds.**
+**Generate a Web project with Go on the back end, Angular, React or
+Vue on the front end, and MongoDB, MySQL or PostgreSQL as a database.**
 
 Goxygen aims at saving your time while setting up a new project. It
 creates a skeleton of an application with all configuration done for
@@ -62,13 +64,17 @@ go run github.com/shpota/goxygen init my-app
 ```
 This generates a project in `my-app` folder. 
 
-By default, a React-based project is generated. You can choose  
-from Angular, React and Vue by passing `angular`, `react` and 
-`vue` to the `--frontend` flag. For example:
+By default, it will use React and MongoDB. Goxygen supports
+Angular, React and Vue for front end and MongoDB, MySQL and
+PostgreSQL as a database. For instance, this command will
+create a project with Vue and PostgreSQL:
 
 ```go
-go run github.com/shpota/goxygen init --frontend vue my-app
+go run github.com/shpota/goxygen init --frontend vue --db postgres my-app
 ```
+
+The `--frontend` flag accepts `angular`, `react` and `vue`.
+The `--db` flag accepts `mongo`, `mysql` and `postgres`.
 
 The generated project is ready to run with `docker-compose`:
 ```sh
